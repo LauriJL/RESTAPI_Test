@@ -53,7 +53,7 @@ namespace Restful_Lopputehtava_LauriLeskinen.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=LAURILESKINAECD\\SQLEXPRESS;Database=northwind;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=LAURILESKINAECD\\SQLEXPRESS;Database=northwind;User ID=sa_admin;Password=Toffee2020;");
             }
         }
 
@@ -440,9 +440,7 @@ namespace Restful_Lopputehtava_LauriLeskinen.Models
 
                 entity.Property(e => e.AccesslevelId).HasColumnName("AccesslevelID");
 
-                entity.Property(e => e.Email)
-                    .IsRequired()
-                    .HasMaxLength(150);
+                entity.Property(e => e.Email).HasMaxLength(150);
 
                 entity.Property(e => e.Firstname)
                     .IsRequired()
@@ -455,6 +453,8 @@ namespace Restful_Lopputehtava_LauriLeskinen.Models
                 entity.Property(e => e.Password)
                     .IsRequired()
                     .HasMaxLength(50);
+
+                entity.Property(e => e.Token).HasMaxLength(3000);
 
                 entity.Property(e => e.Username)
                     .IsRequired()

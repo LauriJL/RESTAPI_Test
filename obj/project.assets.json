@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.JsonPatch/3.1.7": {
         "type": "package",
         "dependencies": {
@@ -1429,6 +1444,21 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.10": {
+      "sha512": "0FwXX6sTTXBq+ZajtT9VSNNFfmzsFL7Jiy4Qj4qT5qBbUPry26V2rh8QMWn52J2+81q9u7Bm0YKfsClu22VTMA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.10.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.JsonPatch/3.1.7": {
       "sha512": "/gD5mRjrFNvF/aTUeIP+ppL7xMd0QPO+em9gYjfM+z5VRcKV+/rXcL6iGF92RAoLUvalBixObqjcPC2lMqzwow==",
       "type": "package",
@@ -5417,6 +5447,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.10",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.7",
       "Microsoft.EntityFrameworkCore >= 3.1.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.7",
@@ -5429,11 +5460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\REACT\\REST\\Restful_Lopputehtava_LauriLeskinen.csproj",
+      "projectUniqueName": "C:\\Users\\laurileskinen\\GitHub\\RESTAPI_Test\\Restful_Lopputehtava_LauriLeskinen.csproj",
       "projectName": "Restful_Lopputehtava_LauriLeskinen",
-      "projectPath": "C:\\REACT\\REST\\Restful_Lopputehtava_LauriLeskinen.csproj",
+      "projectPath": "C:\\Users\\laurileskinen\\GitHub\\RESTAPI_Test\\Restful_Lopputehtava_LauriLeskinen.csproj",
       "packagesPath": "C:\\Users\\laurileskinen\\.nuget\\packages\\",
-      "outputPath": "C:\\REACT\\REST\\obj\\",
+      "outputPath": "C:\\Users\\laurileskinen\\GitHub\\RESTAPI_Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\laurileskinen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5460,6 +5491,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[3.1.10, )"
+          },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
             "version": "[3.1.7, )"
