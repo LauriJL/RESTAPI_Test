@@ -24,7 +24,7 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
             var user = _authenticateService.Authenticate(model.Username, model.Password);
 
             if (user == null)
-                return BadRequest(new { message = "Käyttäjätunnus tai salasana on virheellinen" });
+                return BadRequest(new { message = "Invalid user name or password." });
 
             return Ok(user); //Return to frontend
         }

@@ -29,7 +29,8 @@ namespace Restful_Lopputehtava_LauriLeskinen.Services
             {
                 return null;
             }
-            //User found
+
+            //User found - create token
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Key);
             var tokenDescriptor = new SecurityTokenDescriptor
@@ -48,7 +49,7 @@ namespace Restful_Lopputehtava_LauriLeskinen.Services
 
             user.Password = null; //Remove password before return
 
-            return user; //Return user to controller without password
+            return user; //Return user to controller method without password
         }
     }
 }
