@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hl1PsqEjrOtXOxymMT4vnAWd61GQHFJeJ/2/fNc8AIO93S+drOtoNGl3/0gr+VhVFGX32YdI89YRrTrI8YEhAg==",
+  "dgSpecHash": "l1/Q75H7OBa7EFUnbFMichtRo3m3hdnjkO8bNsE9wjqcDRwKAP56l3Bzo/lqZBQL6bykKsR/yjnTwfkD+AfeNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\laurileskinen\\GitHub\\RESTAPI_Test\\Restful_Lopputehtava_LauriLeskinen.csproj",
+  "projectFilePath": "C:\\REACT\\REST\\jwt\\Restful_Lopputehtava_LauriLeskinen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laurileskinen\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.10\\microsoft.aspnetcore.authentication.jwtbearer.3.1.10.nupkg.sha512",
     "C:\\Users\\laurileskinen\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.7\\microsoft.aspnetcore.jsonpatch.3.1.7.nupkg.sha512",

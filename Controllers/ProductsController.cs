@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Restful_Lopputehtava_LauriLeskinen.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Restful_Lopputehtava_LauriLeskinen.Controllers
 {
@@ -62,7 +64,6 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
 
         //Hakee tuotteen nimen perusteella
         //HUOM pitää olla koko nimi
-
         [HttpGet]
         [Route("name/{name}")]
         public List<Products> GetProductByName(string name)
@@ -140,7 +141,6 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
         }
 
         //Tuotetetietojen päivitys osittain (patch)
-
         [HttpPatch]
         [Route("edit/{id}")]
         public ActionResult EditProduct(int id, [FromBody] Products tuote)
@@ -175,7 +175,6 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
         }
 
         //Tuotteen poisto
-
         [HttpDelete]
         [Route("delete/{id}")]
         public ActionResult DeleteProduct(int id)

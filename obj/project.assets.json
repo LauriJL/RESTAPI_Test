@@ -5460,11 +5460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laurileskinen\\GitHub\\RESTAPI_Test\\Restful_Lopputehtava_LauriLeskinen.csproj",
+      "projectUniqueName": "C:\\REACT\\REST\\jwt\\Restful_Lopputehtava_LauriLeskinen.csproj",
       "projectName": "Restful_Lopputehtava_LauriLeskinen",
-      "projectPath": "C:\\Users\\laurileskinen\\GitHub\\RESTAPI_Test\\Restful_Lopputehtava_LauriLeskinen.csproj",
+      "projectPath": "C:\\REACT\\REST\\jwt\\Restful_Lopputehtava_LauriLeskinen.csproj",
       "packagesPath": "C:\\Users\\laurileskinen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laurileskinen\\GitHub\\RESTAPI_Test\\obj\\",
+      "outputPath": "C:\\REACT\\REST\\jwt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\laurileskinen\\AppData\\Roaming\\NuGet\\NuGet.Config",

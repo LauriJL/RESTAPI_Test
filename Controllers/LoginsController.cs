@@ -5,9 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Restful_Lopputehtava_LauriLeskinen.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Restful_Lopputehtava_LauriLeskinen.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
     [Route("northwind/[controller]")]
     [ApiController]
     public class LoginsController : ControllerBase
@@ -55,7 +59,8 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
             }
         }
 
-        //Uuden tuotteen lisäys
+        //Uuden käyttäjän lisäys    
+        
         [HttpPost]
         [Route("add/")]
         public ActionResult AddNewUser([FromBody] Logins uusikayttaja)
@@ -78,7 +83,7 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
             }
         }
 
-        //Tuotetetietojen päivitys kokonaan (put)
+        //Käyttäjätietojen päivitys kokonaan (put)
         [HttpPut]
         [Route("update/{id}")]
         public ActionResult UpdateUser(int id, [FromBody] Logins kayttaja)

@@ -8,14 +8,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Restful_Lopputehtava_LauriLeskinen.Models;
 
-
 namespace Restful_Lopputehtava_LauriLeskinen.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("northwind/[controller]")]
     [ApiController]
     public class CustomersController : ControllerBase
-    {      
+    {
         [HttpGet]
         [Route("")]
         public List<Customers> GetAllCustomers()
@@ -43,7 +42,6 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
             }
         }
 
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Route("add/")]
         public ActionResult AddNewCustomer([FromBody] Customers uusiasiakas)
@@ -66,7 +64,6 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
             }
         }
 
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut]
         [Route("update/{id}")]
         public ActionResult UpdateCustomerData(string id, [FromBody] Customers customer)
@@ -107,7 +104,6 @@ namespace Restful_Lopputehtava_LauriLeskinen.Controllers
             }
         }
 
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpDelete]
         [Route("delete/{id}")]
         public ActionResult DeleteCustomer(string id)
