@@ -252,4 +252,3 @@ C:\Users\laurileskinen\GitHub\RESTAPI_Test\obj\Debug\netcoreapp3.1\Restful_Loppu
 C:\Users\laurileskinen\GitHub\RESTAPI_Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\laurileskinen\GitHub\RESTAPI_Test\obj\Debug\netcoreapp3.1\Restful_Lopputehtava_LauriLeskinen.csproj.CoreCompileInputs.cache
 C:\Users\laurileskinen\GitHub\RESTAPI_Test\obj\Debug\netcoreapp3.1\Restful_Lopputehtava_LauriLeskinen.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\laurileskinen\GitHub\RESTAPI_Test\obj\Debug\netcoreapp3.1\Restful_Lopputehtava_LauriLeskinen.csprojAssemblyReference.cache
